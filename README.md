@@ -1,4 +1,4 @@
-# Barebone ARM Fibers
+# Baremetal ARM Fibers
 
 Very small and simple implementation of fibers for ARM. It doesn't require to have a operating system running, i.e. is osfree (os-less implementation) of fibers.
 Currently it doesn't support context switching, i.e. the fibers created can run in single context only, which means if your fiber inside is doing a context switching then the behavior is unpredictable.
