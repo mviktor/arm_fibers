@@ -49,7 +49,7 @@ int main(int argc, char *argv[])
 Each fiber is created by calling create_fiber function which accepts:
  - pointer to the fiber main function
  - argument that the fiber main function will be called with
- - stack base - you have to make sure this memory is read-write, you can use malloc previously to allocated that memory
+ - stack base - you have to make sure this memory is read-write, you can use malloc to allocate that memory
  - stack size
 
 To start the fibers, just call start_fibers() function
