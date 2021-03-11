@@ -1,7 +1,6 @@
 # Baremetal ARM Fibers
 
 Very small and simple implementation of fibers for ARM. It doesn't require to have an operating system running, i.e. it is osfree (os-less implementation) of fibers.
-Currently it doesn't support context switching, i.e. the fibers created can run in single context only, which means if your fiber inside is doing a context switching then the behavior is unpredictable.
 
 Fiber is a lightweight thread of execution. Unlike threads which are scheduled by a kernel, fibers use cooperative mutitasking, i.e. each fiber explicitly gives a control to the next fiber.
 
